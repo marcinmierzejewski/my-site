@@ -1,15 +1,24 @@
+import React from 'react';
+import { lazy } from "react";
+import { Route, Routes } from 'react-router-dom';
+import { SharedLayout } from './components/SharedLayout/SharedLayout';
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const SecondPage = lazy(() => import('./pages/SecondPage/SecondPage'));
+const ThirdPage = lazy(() => import('./pages/ThirdPage/ThirdPage'));
 
+export const App = () => {
   return (
-    <div className="App">
-      <div>My site</div>
-    </div>
-  );
-}
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="second" element={<SecondPage />} />        
+          <Route path="third" element={<ThirdPage />} />        
+          <Route path="*" element={<HomePage />} />
+        </Route>
+      </Routes>
+   );
+};
 
-export default App;
