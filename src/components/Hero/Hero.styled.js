@@ -29,6 +29,13 @@ padding-bottom: 50px;
   font-weight: 500;
 }
 
+> h3 {
+  font-size: 60px;
+  line-height: 120%;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
 > p {
   font-size: 30px;
   line-height: 180%;
@@ -49,4 +56,5 @@ export const HeroRight = styled.div`
 
 export const ButtonWrapper = styled.div`
   display: flex;
+  margin-top: 50px;
 `

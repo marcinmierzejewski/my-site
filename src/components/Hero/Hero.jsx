@@ -10,7 +10,7 @@ export const Hero = () => {
     <HeroLeft>
       <h2>Hello!</h2>
       <h1>I'm Marcin Mierzejewski</h1>
-      <p>FrontEnd Developer</p>
+      <h3>FrontEnd Developer</h3>
       <p>I'm a beginner <span>Web developer</span> from Warsaw, who love to create new attractive and modern Web design</p>
       <ButtonWrapper>
         <ContactButton icon={IconMail} text="Email Me!"/>
