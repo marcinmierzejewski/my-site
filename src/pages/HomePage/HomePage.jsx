@@ -1,10 +1,12 @@
 import { BoxSection } from "../../components/Section/Section";
+import { Hero } from "../../components/Hero/Hero";
+import { Skills } from "../../components/Skills/Skills";
 
 const HomePage = () => {
   return (
     <>
-      <h1>Hi, I'm Marcin</h1>
-      <p>FrontEnd Developer</p>
+      <Hero />
+      <Skills />
       <BoxSection title="Section two">
         Tu będze sekcja druga
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia ab deserunt perferendis dolor! Dolorem nemo eum, in dolores distinctio libero officia sapiente commodi eligendi possimus inventore, id dolore corporis?

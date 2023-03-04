@@ -7,9 +7,14 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   color: inherit;
   font-weight: 500;
+  transition: all 250ms linear;
+
+  &:hover {
+    color: var(--color-hover);
+  }
 
   &.active {
-    color: orangered;
+    color: var(--color-accent);
   }
 `;
 

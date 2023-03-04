@@ -4,6 +4,7 @@ import { Link, Header } from './SharedLayout.styled';
 import {Loader} from "../Loader/Loader";
 import { DarkMode } from "../DarkMode/DarkMode";
 import { Logo } from "../Logo/Logo";
+import { ContactButton } from "../ContactButton/ContactButton";
 
 export const SharedLayout = () => {
   return (
@@ -17,7 +18,8 @@ export const SharedLayout = () => {
             <Link to="/projects">Projects</Link>
             <Link to="/third">Layout3</Link>
           </div>
-          <DarkMode />
+          <ContactButton text="Contact Me!"/>
+          <DarkMode />          
         </nav>        
       </Header>
       <Suspense fallback={<Loader />}>
