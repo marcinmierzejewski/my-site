@@ -1,10 +1,12 @@
-import { Section } from "./Section.styled"
+import { Section, Wrapper } from "./Section.styled";
 
-export const BoxSection = ({title, children}) => {
+export const BoxSection = ({ title, children, isBlack=false}) => {
   return (
-    <Section>
-      <h2>{title}</h2>
-      {children}
+    <Section isBlack={isBlack}>      
+      <Wrapper>
+        <h2>{title}</h2>
+        {children}
+      </Wrapper>
     </Section>
-  )
-}
+  );
+};

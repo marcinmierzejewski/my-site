@@ -5,6 +5,8 @@ export const HeroWrapper = styled.div`
   display: flex;
   text-align: left;
   justify-content: left;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0 15px 50px;
   
 `;

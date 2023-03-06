@@ -6,7 +6,10 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <Skills />
+      <BoxSection isBlack={true}>
+        <Skills />
+      </BoxSection>
+      
       <BoxSection title="Section two">
         Tu będze sekcja druga
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia ab deserunt perferendis dolor! Dolorem nemo eum, in dolores distinctio libero officia sapiente commodi eligendi possimus inventore, id dolore corporis?

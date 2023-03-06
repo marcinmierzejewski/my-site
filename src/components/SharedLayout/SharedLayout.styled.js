@@ -22,6 +22,8 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
   gap: 12px;
   padding: 8px 0;
   margin-bottom: 16px;
