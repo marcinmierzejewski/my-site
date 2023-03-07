@@ -17,6 +17,9 @@ export const Button = styled.button`
 
   &:hover {
     box-shadow: 0 0 10px var(--color-accent);
+     & img {
+      transform: scale(1.2);
+    }
   }
 
   > img {

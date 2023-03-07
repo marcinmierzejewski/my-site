@@ -5,8 +5,6 @@ export const Section = styled.section`
   padding-bottom: 50px;
   background-color: ${(props) =>
       props.isBlack === true ? "#000000" : "inherit"};
-
-
 `;
 
 export const Wrapper = styled.div`

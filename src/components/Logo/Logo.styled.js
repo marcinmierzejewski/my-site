@@ -1,17 +1,32 @@
 import styled from "styled-components";
 import "../../index.css";
 
-export const MainLogo = styled.span`
-font-size: 38px;
-font-weight: 700;
-color: #000000;
+export const LogoWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
-> span {
+export const MainLogo = styled.span`
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    display: inline;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 38px;
+  }
+`;
+
+export const LogoSpecial = styled.span`
   font-size: 45px;
   color: var(--color-light);
   position: relative;
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -25,7 +40,5 @@ color: #000000;
     background-color: var(--color-accent);
     box-shadow: 0 0 10px var(--color-accent);
     z-index: -1;
-
   }
-}
-`
+`;

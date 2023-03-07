@@ -1,9 +1,11 @@
-import { MainLogo } from "./Logo.styled"
+import { LogoWrapper, MainLogo, LogoSpecial } from "./Logo.styled";
 
 export const Logo = () => {
   return (
-    <>
-    <MainLogo>marcin<span>m</span>ierzejewski</MainLogo>
-    </>
-  )
-}
+    <LogoWrapper>
+      <MainLogo>marcin</MainLogo>
+      <LogoSpecial>m</LogoSpecial>
+      <MainLogo>ierzejewski</MainLogo>
+    </LogoWrapper>
+  );
+};
