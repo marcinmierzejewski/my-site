@@ -1,6 +1,7 @@
 import { Logo } from "../Logo/Logo";
 import { ToolsMenu } from "../ToolsMenu/ToolsMenu";
-import { Link } from "./NavBar.styled";
+import { Link, MoreBtn } from "./NavBar.styled";
+import { AiOutlineMenu } from 'react-icons/ai';
 
 export const NavBar = ({ setIsOpen }) => {
   return (
@@ -13,9 +14,9 @@ export const NavBar = ({ setIsOpen }) => {
         <Link to="/third">Layout3</Link>
       </div>
       <ToolsMenu />
-      <button onClick={() => setIsOpen(true)} type="button">
-        open
-      </button>
+      <MoreBtn onClick={() => setIsOpen(true)} type="button">
+        <AiOutlineMenu size={35} />
+      </MoreBtn>
     </nav>
   );
 };

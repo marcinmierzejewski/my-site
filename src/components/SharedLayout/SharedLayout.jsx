@@ -6,8 +6,8 @@ import { NavBar } from "../NavBar/NavBar";
 import { AsideMenu } from "../AsideMenu/AsideMenu";
 
 export const SharedLayout = () => {
+  const [isOpen, setIsOpen] = useState(false)
 
-    const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <Header>

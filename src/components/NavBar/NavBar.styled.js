@@ -17,3 +17,23 @@ export const Link = styled(NavLink)`
     color: var(--color-accent);
   }
 `;
+
+export const MoreBtn = styled.button`
+  display: block;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  transition: all 250ms linear;
+
+  &:hover {
+    color: var(--color-accent)
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+    visibility: hidden;
+  }  
+`

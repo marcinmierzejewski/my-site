@@ -10,8 +10,8 @@ export const LogoWrapper = styled.div`
 export const MainLogo = styled.span`
   display: none;
 
-  @media screen and (min-width: 480px) {
-    display: inline;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
     font-size: 28px;
     font-weight: 700;
     color: #000000;

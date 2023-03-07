@@ -16,10 +16,10 @@ export const Header = styled.header`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-around;    
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     font-size: 30px;  
     justify-content: space-between;
   }

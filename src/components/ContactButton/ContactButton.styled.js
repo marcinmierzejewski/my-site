@@ -7,10 +7,11 @@ export const Button = styled.button`
   color: inherit;
   font-family: inherit;
   font-size: 30px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border: none;
   border-radius: 5px;
   background: var(--color-accent);
+  margin-right: 25px;
   cursor: pointer;
   position: relative;
   transition: all 250ms linear;
