@@ -39,6 +39,11 @@ input { display: none;}
   border-radius: 15px;
   background: var(--color-dark);
   cursor: pointer;
+  transition: box-shadow 250ms linear;
+}
+
+.switch:hover {
+  box-shadow: 0 0 10px var(--color-accent);
 }
 
 .handle {

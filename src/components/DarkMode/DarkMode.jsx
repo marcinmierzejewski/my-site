@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import "../../index.css";
 
-export const DarkMode = () => {
+export const DarkMode = ({ isDark, setIsDark }) => {
   const handleToggled = () => {
     document.body.classList.toggle("dark");
     localStorage.setItem("dark", document.body.className);
+    setIsDark(isDark => !isDark)
   };
 
   useEffect(() => {
