@@ -15,7 +15,8 @@ export const ModalOverlay = styled.div`
 `;
 
 export const Modal = styled.div`
-  display: flex;
+  display: ${(props) => (props.isOpen ? "flex" : "none")};
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
