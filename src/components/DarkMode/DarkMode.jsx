@@ -16,7 +16,7 @@ export const DarkMode = ({ isDark, setIsDark }) => {
 
   return (
     <label>
-      <input type="checkbox" onClick={handleToggled} />
+      <input className="darkInput" type="checkbox" onClick={handleToggled} />
       <span className="switch">
         <span className="handle" />
       </span>

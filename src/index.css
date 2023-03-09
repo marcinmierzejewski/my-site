@@ -28,7 +28,7 @@ body.dark {
   color: var(--color-light)
 }
 
-input { display: none;}
+.darkInput { display: none;}
 
 .switch {
   overflow: hidden;
