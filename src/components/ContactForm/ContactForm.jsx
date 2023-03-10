@@ -8,7 +8,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  init("E1Aba-sg_6xJTrYkf");
+  init(`${import.meta.env.VITE_USER_KEY}`);
   const form = useRef();
 
   const inputChange = (e) => {
@@ -31,6 +31,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
     setName("");
     setNumber("");
     setEmail("");
+    setMessage("");
   };
 
   //press Escape to close Contact form modal
@@ -49,18 +50,23 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
 
   const valueSubmit = (e) => {
     e.preventDefault();
+    const SERVICE = import.meta.env.VITE_SERVICE_KEY;
+    const TEMPLATE = import.meta.env.VITE_TEMPLATE_KEY;
+    const USER = import.meta.env.VITE_USER_KEY;
     if (1 === 0) {
       console.log("Incorrect data"); //stworzyc validator
     } else {
-      emailjs.sendForm("service_xzdi6cl", "template_06kxnin", form.current, "E1Aba-sg_6xJTrYkf").then(
-        (result) => {
-          alert("Message Sent Successfully");
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      emailjs
+        .sendForm(`${SERVICE}`, `${TEMPLATE}`, form.current, `${USER}`)
+        .then(
+          (result) => {
+            alert("Message Sent Successfully");
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       console.log(name, number, email);
       resetForm();
       setFormIsOpen(false);
@@ -74,7 +80,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
         onClick={() => setFormIsOpen(false)}
       />
       <FormWrapper formIsOpen={formIsOpen}>
-        <form onSubmit={valueSubmit} ref={form} >
+        <form onSubmit={valueSubmit} ref={form}>
           <FormBoxText isActive={name}>
             <input
               type="text"
