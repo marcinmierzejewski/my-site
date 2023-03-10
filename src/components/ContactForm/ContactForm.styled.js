@@ -19,9 +19,8 @@ export const FormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  background-color: white;
+  width: 40%;
+  background-color: var(--color-dark);
   position: absolute;
   top: 0;
   right: 50%;
@@ -87,3 +86,58 @@ export const FormWrapper = styled.div`
     }
   }
 `;
+
+export const FormBoxText = styled.div`
+  position: relative;
+  width: 400px;
+  > input {
+    height: 56px;
+    width: 100%;
+    padding-left: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-color: ${(props) => (props.isActive ? "#8f44fd" : "rgba(255, 255, 255, 0.75)")};
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+    color: #f9f9f9;
+    font-family: inherit;
+    font-size: 22px;
+    &:focus {
+      border-color: #8f44fd;
+      ~ span {
+        color: #f9f9f9;
+      }
+      ~ label {
+        background: var(--color-dark);
+        color: rgba(255, 255, 255, 0.75);
+        translate: 0 -50px;
+      }
+    }
+  }
+
+  label,
+  span {
+    position: absolute;
+    top: 50%;
+    pointer-events: none;    
+    transition: 0.3s;
+  }
+
+  > label {
+    left: 10px;
+    font-size: 22px;
+    translate: ${(props) => (props.isActive ? "0 -50px" : "0 -50%")};
+    background: ${(props) => (props.isActive ? "var(--color-dark)" : "transparent")};
+    color: ${(props) => (props.isActive ? "rgba(255, 255, 255, 0.75)" : "#f9f9f9")};
+    padding: 4px 8px;
+  }
+
+  > span {
+    right: 16px;
+    font-size: 28px;
+    translate: 0 -50%;
+    color: ${(props) => (props.isActive ? "#f9f9f9" : "#888888")};
+  }
+
+
+`
