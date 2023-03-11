@@ -15,6 +15,7 @@ export const Button = styled.button`
   cursor: pointer;
   position: relative;
   transition: all 250ms linear;
+  box-shadow: 0 4px 4px #00000026;
 
   &:hover {
     box-shadow: 0 0 10px var(--color-accent);

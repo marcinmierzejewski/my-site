@@ -19,7 +19,8 @@ export const FormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 500px;  
+  padding: 40px;
   background-color: var(--color-dark);
   position: absolute;
   top: 0;
@@ -28,15 +29,19 @@ export const FormWrapper = styled.div`
   transition: all 250ms linear;
   transform: ${(props) =>
     props.formIsOpen
-      ? "translate(50%, 20%) scale(1)"
-      : "translate(50%, 20%) scale(0)"};
+      ? "translate(50%, 10%) scale(1)"
+      : "translate(50%, 10%) scale(0)"};
 
   > form {
-    display: block;
-    max-width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
     margin: 0 auto;
-    padding: 20px 40px;
-
+  }
+/* 
     > label {
       display: block;
       width: 100%;
@@ -83,19 +88,20 @@ export const FormWrapper = styled.div`
         background-color: rgb(146, 146, 214);
         color: white;
       }
-    }
-  }
+    } */
+  /* } */
 `;
 
 export const FormBoxText = styled.div`
   position: relative;
-  width: 400px;
+  width: 100%;
   > input {
     height: 56px;
-    width: 100%;
+    width: 484px;
+    padding:0;
     padding-left: 16px;
-    border: 2px solid rgba(255, 255, 255, 0.75);
-    border-color: ${(props) => (props.isActive ? "#8f44fd" : "rgba(255, 255, 255, 0.75)")};
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-color: ${(props) => (props.isActive ? "var(--color-accent)" : "rgba(255, 255, 255, 0.75)")};
     border-radius: 8px;
     outline: none;
     background: transparent;
@@ -103,7 +109,7 @@ export const FormBoxText = styled.div`
     font-family: inherit;
     font-size: 22px;
     &:focus {
-      border-color: #8f44fd;
+      border-color: var(--color-accent);
       ~ span {
         color: #f9f9f9;
       }
@@ -138,6 +144,35 @@ export const FormBoxText = styled.div`
     translate: 0 -50%;
     color: ${(props) => (props.isActive ? "#f9f9f9" : "#888888")};
   }
-
-
 `
+
+export const SubmitButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: inherit;
+  font-family: inherit;
+  width: 200px;
+  font-size: 30px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-accent);
+  cursor: pointer;
+  position: relative;
+  transition: all 250ms linear;
+  box-shadow: 0 4px 4px #00000026;
+
+  &:hover {
+    box-shadow: 0 0 10px var(--color-accent);
+     & img {
+      transform: scale(1.2);
+    }
+  }
+
+  > img {
+    height: 20px;
+    margin-right: 10px;
+  }
+`;

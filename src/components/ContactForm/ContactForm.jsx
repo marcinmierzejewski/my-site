@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { FormOverlay, FormWrapper, FormBoxText } from "./ContactForm.styled";
+import { FormOverlay, FormWrapper, FormBoxText, SubmitButton } from "./ContactForm.styled";
 import emailjs, { init } from "@emailjs/browser";
 
 export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
@@ -81,6 +81,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
       />
       <FormWrapper formIsOpen={formIsOpen}>
         <form onSubmit={valueSubmit} ref={form}>
+          <p>Contact me</p>
           <FormBoxText isActive={name}>
             <input
               type="text"
@@ -102,7 +103,6 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               onChange={inputChange}
               pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-              required
             />
             <span>N</span>
             <label>Number</label>
@@ -121,6 +121,15 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
             <label>E-mail</label>
           </FormBoxText>
           <FormBoxText isActive={message}>
+            {/* <textarea
+                type="text"
+                name="message"
+                value={message}
+                onChange={inputChange}
+                cols="30"
+                rows="10"
+                required
+              /> */}
             <input
               type="text"
               name="message"
@@ -133,8 +142,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
             <span>M</span>
             <label>Message</label>
           </FormBoxText>
-
-          <button type="submit">Submit</button>
+          <SubmitButton type="submit">Submit</SubmitButton>
         </form>
       </FormWrapper>
     </>

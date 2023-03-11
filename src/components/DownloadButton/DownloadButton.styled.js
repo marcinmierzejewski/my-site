@@ -17,7 +17,6 @@ export const Download = styled.button`
   transition: all 250ms linear;
   text-decoration: underline;
   margin-left: 35px;
-  
 
   &:hover {
     box-shadow: 0 0 10px var(--color-accent);
