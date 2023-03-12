@@ -148,7 +148,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
             <label>Message</label>
           </FormBoxText>
           <SubmitButton type="submit" isAvailable={name && email && message}>
-            Submit
+            Send message
           </SubmitButton>
         </form>
       </FormWrapper>
