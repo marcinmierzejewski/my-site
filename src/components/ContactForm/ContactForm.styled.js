@@ -22,6 +22,7 @@ export const FormWrapper = styled.div`
   width: 300px;
   padding: 40px;
   background-color: var(--color-dark);
+  color: #ffffff;
   position: absolute;
   top: 0;
   right: 50%;

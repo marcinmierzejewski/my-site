@@ -26,6 +26,7 @@ export const MoreBtn = styled.button`
   border: none;
   cursor: pointer;
   width: 50px;
+  margin-right: 15px;
   transition: all 250ms linear;
 
   &:hover {

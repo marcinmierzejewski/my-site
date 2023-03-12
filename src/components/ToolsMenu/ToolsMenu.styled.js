@@ -7,5 +7,6 @@ export const ToolsWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;    
+    margin-right: 20px;
   }
 `
