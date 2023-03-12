@@ -19,7 +19,7 @@ export const FormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;  
+  width: 500px;
   padding: 40px;
   background-color: var(--color-dark);
   position: absolute;
@@ -32,6 +32,13 @@ export const FormWrapper = styled.div`
       ? "translate(50%, 10%) scale(1)"
       : "translate(50%, 10%) scale(0)"};
 
+  @media screen and (min-width: 768px) {
+    right: 100%;
+  }
+  @media screen and (min-width: 1024px) {
+    right: 50%;
+  }
+
   > form {
     display: flex;
     justify-content: center;
@@ -41,55 +48,6 @@ export const FormWrapper = styled.div`
     gap: 40px;
     margin: 0 auto;
   }
-/* 
-    > label {
-      display: block;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      color: rgb(75, 62, 142);
-      font-weight: 500;
-
-      > input {
-        display: block;
-        width: 100%;
-        height: 30px;
-        margin-top: 5px;
-        border: 2px solid rgba(188, 184, 184, 0.989);
-        border-radius: 4px;
-        padding-left: 20px;
-        outline: none;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:focus {
-          border: 2px solid rgb(75, 62, 142);
-        }
-      }
-    }
-
-    > button {
-      border: none;
-      display: block;
-      margin: 0 auto;
-      width: 200px;
-      padding: 5px;
-      margin-top: 30px;
-      border-radius: 3px;
-      cursor: pointer;
-      box-shadow: 2px 2px 5px rgb(97, 92, 92);
-      transition: all 250ms linear;
-      font-weight: 500;
-      &:active {
-        transform: translate(2px, 2px);
-        box-shadow: 0px 0px 3px rgb(97, 92, 92);
-        background-color: rgb(146, 146, 214);
-      }
-
-      &:hover {
-        background-color: rgb(146, 146, 214);
-        color: white;
-      }
-    } */
-  /* } */
 `;
 
 export const FormBoxText = styled.div`
@@ -98,10 +56,11 @@ export const FormBoxText = styled.div`
   > input {
     height: 56px;
     width: 484px;
-    padding:0;
+    padding: 0;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.75);
-    border-color: ${(props) => (props.isActive ? "var(--color-accent)" : "rgba(255, 255, 255, 0.75)")};
+    border-color: ${(props) =>
+      props.isActive ? "var(--color-accent)" : "rgba(255, 255, 255, 0.75)"};
     border-radius: 8px;
     outline: none;
     background: transparent;
@@ -125,7 +84,7 @@ export const FormBoxText = styled.div`
   span {
     position: absolute;
     top: 50%;
-    pointer-events: none;    
+    pointer-events: none;
     transition: 0.3s;
   }
 
@@ -133,8 +92,10 @@ export const FormBoxText = styled.div`
     left: 10px;
     font-size: 22px;
     translate: ${(props) => (props.isActive ? "0 -50px" : "0 -50%")};
-    background: ${(props) => (props.isActive ? "var(--color-dark)" : "transparent")};
-    color: ${(props) => (props.isActive ? "rgba(255, 255, 255, 0.75)" : "#f9f9f9")};
+    background: ${(props) =>
+      props.isActive ? "var(--color-dark)" : "transparent"};
+    color: ${(props) =>
+      props.isActive ? "rgba(255, 255, 255, 0.75)" : "#f9f9f9"};
     padding: 4px 8px;
   }
 
@@ -144,7 +105,7 @@ export const FormBoxText = styled.div`
     translate: 0 -50%;
     color: ${(props) => (props.isActive ? "#f9f9f9" : "#888888")};
   }
-`
+`;
 
 export const SubmitButton = styled.button`
   display: flex;
@@ -166,7 +127,7 @@ export const SubmitButton = styled.button`
 
   &:hover {
     box-shadow: 0 0 10px var(--color-accent);
-     & img {
+    & img {
       transform: scale(1.2);
     }
   }
