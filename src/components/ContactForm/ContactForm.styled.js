@@ -19,7 +19,7 @@ export const FormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 300px;
   padding: 40px;
   background-color: var(--color-dark);
   position: absolute;
@@ -34,7 +34,9 @@ export const FormWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     right: 100%;
+    width: 500px;
   }
+
   @media screen and (min-width: 1024px) {
     right: 50%;
   }
@@ -55,7 +57,7 @@ export const FormBoxText = styled.div`
   width: 100%;
   > input {
     height: 56px;
-    width: 484px;
+    width: 284px;
     padding: 0;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.75);
@@ -77,6 +79,10 @@ export const FormBoxText = styled.div`
         color: rgba(255, 255, 255, 0.75);
         translate: 0 -50px;
       }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 484px;
     }
   }
 
