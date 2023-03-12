@@ -125,7 +125,8 @@ export const SubmitButton = styled.button`
   padding: 5px 20px;
   border: none;
   border-radius: 5px;
-  background: var(--color-accent);
+  background: ${(props) => (props.isAvailable ? "var(--color-accent)" : "rgba(255, 255, 255, 0.3)")};
+  pointer-events: ${(props) => (props.isAvailable ? "auto" : "none")};
   cursor: pointer;
   position: relative;
   transition: all 250ms linear;

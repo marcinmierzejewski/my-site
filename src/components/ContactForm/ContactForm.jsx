@@ -1,5 +1,10 @@
 import { useEffect, useState, useRef } from "react";
-import { FormOverlay, FormWrapper, FormBoxText, SubmitButton } from "./ContactForm.styled";
+import {
+  FormOverlay,
+  FormWrapper,
+  FormBoxText,
+  SubmitButton,
+} from "./ContactForm.styled";
 import emailjs, { init } from "@emailjs/browser";
 
 export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
@@ -142,7 +147,9 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
             <span>M</span>
             <label>Message</label>
           </FormBoxText>
-          <SubmitButton type="submit">Submit</SubmitButton>
+          <SubmitButton type="submit" isAvailable={name && email && message}>
+            Submit
+          </SubmitButton>
         </form>
       </FormWrapper>
     </>
