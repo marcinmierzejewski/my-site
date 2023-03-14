@@ -6,14 +6,12 @@ import { useItIsDark } from "../../hooks/useItIsDark";
 import { useFormIsOpen } from "../../hooks/useFormIsOpen";
 import { ContactForm } from "../ContactForm/ContactForm";
 
-
 export const AsideMenu = ({ isOpen, setIsOpen }) => {
   // const initialDark = localStorage.getItem("dark") || false
   // const [isDark, setIsDark] = useState(initialDark)
   const { isDark, setIsDark } = useItIsDark();
   // const [formIsOpen, setFormIsOpen] = useState(false);
   const { formIsOpen, setFormIsOpen } = useFormIsOpen();
-
 
   useEffect(() => {
     const close = (e) => {
@@ -30,16 +28,17 @@ export const AsideMenu = ({ isOpen, setIsOpen }) => {
 
   return (
     <>
-      <ModalOverlay isOpen={isOpen} onClick={() => {
-        setIsOpen(false)
-        setFormIsOpen(false)
-      }
-        } />
+      <ModalOverlay
+        isOpen={isOpen}
+        onClick={() => {
+          setIsOpen(false);
+          setFormIsOpen(false);
+        }}
+      />
       <Modal isOpen={isOpen} isDark={isDark}>
-        <DarkMode isDark={isDark} setIsDark={setIsDark} />
         <ContactButton text="Contact Me!" setFormIsOpen={setFormIsOpen} />
-        <ContactForm formIsOpen={formIsOpen} setFormIsOpen={setFormIsOpen}/>
-
+        <DarkMode isDark={isDark} setIsDark={setIsDark} />
+        <ContactForm formIsOpen={formIsOpen} setFormIsOpen={setFormIsOpen} />
       </Modal>
     </>
   );

@@ -17,6 +17,9 @@ export const IconsSkills = styled.ul`
   }
 
   > li > img {
-    height: 100px;
+    height: 70px;
+    @media screen and (min-width: 480px) {
+      height: 100px;
+    }
   }
 `;

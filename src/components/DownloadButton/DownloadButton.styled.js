@@ -6,9 +6,9 @@ export const Download = styled.button`
   justify-content: center;
   color: inherit;
   font-family: inherit;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
-  padding: 5px 20px;
+  padding: 5px 15px;
   border: none;
   border-radius: 5px;
   background: transparent;
@@ -16,7 +16,11 @@ export const Download = styled.button`
   position: relative;
   transition: all 250ms linear;
   text-decoration: underline;
-  margin-left: 35px;
+  /* margin-left: 35px; */
+  @media screen and (min-width: 480px) {
+    font-size: 30px;
+    padding: 5px 20px;
+    }
 
   &:hover {
     box-shadow: 0 0 10px var(--color-accent);

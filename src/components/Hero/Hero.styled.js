@@ -12,23 +12,25 @@ export const HeroWrapper = styled.div`
 
 export const HeroLeft = styled.div`
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
 
   @media screen and (min-width: 768px) {
     width: 50%;
     text-align: left;
     justify-content: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   > h1,
   h2 {
     font-family: "Playfair Display";
-    font-size: 70px;
+    font-size: 40px;
     line-height: 120%;
     position: relative;
     z-index: 1;
-
+    @media screen and (min-width: 480px) {
+      font-size: 70px;
+    }
     @media screen and (min-width: 768px) {
       width: 650px;
       font-size: 100px;
@@ -36,19 +38,25 @@ export const HeroLeft = styled.div`
   }
 
   > h2 {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 120%;
     font-weight: 500;
+    @media screen and (min-width: 480px) {
+      font-size: 50px;
+    }
     @media screen and (min-width: 768px) {
       font-size: 80px;
     }
   }
 
   > h3 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 120%;
     font-weight: 500;
     margin-top: 30px;
+    @media screen and (min-width: 480px) {
+      font-size: 36px;
+    }
     @media screen and (min-width: 768px) {
       font-size: 60px;
     }
@@ -58,6 +66,9 @@ export const HeroLeft = styled.div`
     font-size: 22px;
     line-height: 180%;
     opacity: 0.5;
+    @media screen and (min-width: 480px) {
+      font-size: 26px;
+    }
     @media screen and (min-width: 768px) {
       font-size: 30px;
     }
@@ -82,8 +93,14 @@ export const HeroRight = styled.div`
 
 export const ButtonWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 50px;
+    }
 
   @media screen and (min-width: 768px) {
     justify-content: left;

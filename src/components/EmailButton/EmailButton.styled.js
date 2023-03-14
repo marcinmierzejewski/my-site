@@ -6,8 +6,8 @@ export const Button = styled.button`
   justify-content: center;
   color: inherit;
   font-family: inherit;
-  font-size: 30px;
-  padding: 5px 20px;
+  font-size: 24px;
+  padding: 5px 15px;
   border: none;
   border-radius: 5px;
   background: var(--color-accent);
@@ -15,6 +15,10 @@ export const Button = styled.button`
   position: relative;
   transition: all 250ms linear;
   box-shadow: 0 4px 4px #00000026;
+  @media screen and (min-width: 480px) {
+    font-size: 30px;
+    padding: 5px 20px;
+    }
 
   &:hover {
     box-shadow: 0 0 10px var(--color-accent);
