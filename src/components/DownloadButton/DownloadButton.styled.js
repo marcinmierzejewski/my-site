@@ -36,4 +36,8 @@ export const Download = styled.button`
     margin-right: 10px;
     transition: all 250ms linear;
   }
+
+  > a {
+    color: inherit;
+  }
 `;
