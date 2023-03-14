@@ -6,6 +6,12 @@ import {
   SubmitButton,
 } from "./ContactForm.styled";
 import emailjs, { init } from "@emailjs/browser";
+import {
+  IoIosContact,
+  IoIosPhonePortrait,
+  IoIosMail,
+  IoIosFiling,
+} from "react-icons/io";
 
 export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
   const [name, setName] = useState("");
@@ -86,7 +92,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
       />
       <FormWrapper formIsOpen={formIsOpen}>
         <form onSubmit={valueSubmit} ref={form}>
-          <p>Contact me</p>
+          <p>Contact me!</p>
           <FormBoxText isActive={name}>
             <input
               type="text"
@@ -97,7 +103,9 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               required
             />
-            <span>C</span>
+            <span>
+              <IoIosContact />
+            </span>
             <label>Name</label>
           </FormBoxText>
           <FormBoxText isActive={number}>
@@ -109,7 +117,9 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             />
-            <span>N</span>
+            <span>
+              <IoIosPhonePortrait />
+            </span>
             <label>Number</label>
           </FormBoxText>
           <FormBoxText isActive={email}>
@@ -122,7 +132,9 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               required
             />
-            <span>E</span>
+            <span>
+              <IoIosMail />
+            </span>
             <label>E-mail</label>
           </FormBoxText>
           <FormBoxText isActive={message}>
@@ -144,7 +156,9 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               required
             />
-            <span>M</span>
+            <span>
+              <IoIosFiling />
+            </span>
             <label>Message</label>
           </FormBoxText>
           <SubmitButton type="submit" isAvailable={name && email && message}>

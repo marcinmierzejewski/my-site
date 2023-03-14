@@ -13,16 +13,20 @@ export const Button = styled.button`
   background: var(--color-accent);
   cursor: pointer;
   position: relative;
-  transition: all 250ms linear;
   box-shadow: 0 4px 4px #00000026;
+  fill: white;
   @media screen and (min-width: 480px) {
     font-size: 30px;
     padding: 5px 20px;
-    }
+  }
 
   &:hover {
     box-shadow: 0 0 10px var(--color-accent);
-     & img {
+    transition: all 250ms linear;
+
+    & img {
+  fill: white;
+
       transform: scale(1.2);
     }
   }
@@ -30,5 +34,10 @@ export const Button = styled.button`
   > img {
     height: 20px;
     margin-right: 10px;
+  }
+
+  > a {
+    color: inherit;
+    text-decoration: none;
   }
 `;

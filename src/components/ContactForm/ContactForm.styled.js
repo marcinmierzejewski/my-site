@@ -50,6 +50,10 @@ export const FormWrapper = styled.div`
     width: 100%;
     gap: 40px;
     margin: 0 auto;
+
+    > p {
+      font-size: 36px;
+    }
   }
 `;
 
@@ -111,6 +115,7 @@ export const FormBoxText = styled.div`
     font-size: 28px;
     translate: 0 -50%;
     color: ${(props) => (props.isActive ? "#f9f9f9" : "#888888")};
+    display: flex;
   }
 `;
 

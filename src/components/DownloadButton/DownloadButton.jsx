@@ -1,11 +1,12 @@
 import React from "react";
 import { Download } from "./DownloadButton.styled";
 import CV from "../../../public/CV.pdf";
+import { HiOutlineDownload } from "react-icons/hi";
 
-export const DownloadButton = ({ icon = "", text = "Button" }) => {
+export const DownloadButton = ({ text = "Button" }) => {
   return (
     <Download type="button">
-      <img src={icon} />
+      <HiOutlineDownload className="download-icon"/>
       <a href={CV} download>
         {text}
       </a>

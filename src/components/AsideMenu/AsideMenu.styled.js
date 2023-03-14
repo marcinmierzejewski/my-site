@@ -23,7 +23,7 @@ export const Modal = styled.div`
   align-items: center;
   padding: 100px 0;
   gap: 50px;
-  height: 50%;
+  height: 60%;
   width: 100%;
   background-color: ${(props) =>
     props.isDark ? "var(--color-dark)" : "var(--color-light)"};
