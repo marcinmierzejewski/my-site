@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ProjectContent = styled.div`
-  background-color: red;
   padding: 30px;
 `;
 
@@ -10,16 +9,13 @@ export const ProjectWrapper = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* width: 560px; */
   width: 80vw;
   max-width: 540px;
-  /* height: 300px; */
   background-color: var(--color-content);
   border-radius: 16px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    height: 300px;
-    /* width: 100%; */
+    min-height: 300px;
   }
 `;
 
@@ -54,32 +50,38 @@ export const ContentBox = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
-  width: 70%;
-  /* width: 100%; */
-  height: 100%;
+  width: 100%;
+  min-height: 300px;
   flex-direction: column;
-  justify-content: space-around;
-  text-align: left;
-  > div {
-    text-align: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 15px;
+  @media screen and (min-width: 768px) {
+    width: 65%;
+    text-align: left;
   }
 
   > h3 {
     padding-top: 30px;
-    font-size: 24px;
+    font-size: 30px;
+    letter-spacing: 0.03rem;
   }
 `;
 export const ButtonBox = styled.div`
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
+  padding-bottom: 20px;
   > button {
     color: inherit;
     font-family: inherit;
     font-size: 20px;
     padding: 5px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    width: 120px;
     background: var(--color-accent);
     cursor: pointer;
     transition: all 250ms linear;

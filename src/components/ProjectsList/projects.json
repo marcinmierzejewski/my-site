@@ -2,18 +2,91 @@
   {
     "image": "./images/phonebook.png",
     "title": "Phonebook",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
     "usedSkills": "React, Redux, JavaScript",
     "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-08-phonebook",
     "pageLink": "https://phonebook-react-redux-usermenu-mm.netlify.app/",
-    "id": 1
+    "id": 1001
+  },
+  {
+    "image": "./images/questify.png",
+    "title": "Questify",
+    "about": "Demo12345 demo@demo.pl acja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/goit-final-project-questify",
+    "pageLink": "https://final-project-questify.netlify.app/",
+    "id": 1002
   },
   {
     "image": "./images/movies.png",
-    "title": "Search movies",
+    "title": "Movies search",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
     "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-05-movies",
     "pageLink": "https://goit-react-hw-05-movies-mm.netlify.app/",
-    "id": 2
-  }
-  
+    "id": 1007
+  },
+  {
+    "image": "./images/imagesearchreact.png",
+    "title": "Image search - React",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-04-hooks-images",
+    "pageLink": "https://marcinmierzejewski.github.io/goit-react-hw-04-hooks-images/",
+    "id": 1008
+  },
+  {
+    "image": "./images/booster.png",
+    "title": "Event booster",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/goit-js-team-project",
+    "pageLink": "https://marcinmierzejewski.github.io/goit-js-team-project/",
+    "id": 1003
+  },
+  {
+    "image": "./images/imagesearch.png",
+    "title": "Image search",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/goit-js-hw-11",
+    "pageLink": "https://marcinmierzejewski.github.io/goit-js-hw-11/",
+    "id": 1004
+  },
+  {
+    "image": "./images/hell.png",
+    "title": "Hellish English",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/hell",
+    "pageLink": "https://marcinmierzejewski.github.io/hell/",
+    "id": 1005
+  },
+  {
+    "image": "./images/ice.png",
+    "title": "Ice Cream",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/team-project-goit",
+    "pageLink": "https://marcinmierzejewski.github.io/team-project-goit/",
+    "id": 1010
+  },
+  {
+    "image": "./images/webstudio.png",
+    "title": "Web Studio",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/goit-markup-hw-08",
+    "pageLink": "https://marcinmierzejewski.github.io/goit-markup-hw-08/",
+    "id": 1011
+  },
+  {
+    "image": "./images/barber.png",
+    "title": "Barber shop",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/barbershop",
+    "pageLink": "https://marcinmierzejewski.github.io/barbershop/",
+    "id": 1012
+  }  
 ]

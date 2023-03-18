@@ -5,7 +5,6 @@ import { BoxSection } from "../../components/Section/Section";
 const ProjectsPage = () => {
   return (
     <>
-      <h2>My projects</h2>
       <BoxSection>
         <ProjectsList projects={projects} />
       </BoxSection>
