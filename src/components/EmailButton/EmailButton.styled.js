@@ -40,4 +40,8 @@ export const Button = styled.button`
     color: inherit;
     text-decoration: none;
   }
+
+  > svg {
+    margin-right: 10px;
+  }
 `;

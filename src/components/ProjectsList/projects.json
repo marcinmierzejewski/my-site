@@ -1,0 +1,19 @@
+[
+  {
+    "image": "./images/phonebook.png",
+    "title": "Phonebook",
+    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
+    "usedSkills": "React, Redux, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-08-phonebook",
+    "pageLink": "https://phonebook-react-redux-usermenu-mm.netlify.app/",
+    "id": 1
+  },
+  {
+    "image": "./images/movies.png",
+    "title": "Search movies",
+    "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-05-movies",
+    "pageLink": "https://goit-react-hw-05-movies-mm.netlify.app/",
+    "id": 2
+  }
+  
+]

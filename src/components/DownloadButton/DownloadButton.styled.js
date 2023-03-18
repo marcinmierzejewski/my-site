@@ -30,4 +30,8 @@ export const Download = styled.button`
   > a {
     color: inherit;
   }
+
+  > svg {
+    margin-right: 10px;
+  }
 `;
