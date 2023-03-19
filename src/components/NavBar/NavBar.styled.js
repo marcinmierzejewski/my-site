@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+export const LinkBox = styled.div`
+  display: flex;
+  align-items: center;
+`
+
 export const Link = styled(NavLink)`
   padding: 8px 16px;
   border-radius: 4px;
@@ -8,6 +13,8 @@ export const Link = styled(NavLink)`
   color: inherit;
   font-weight: 500;
   transition: all 250ms linear;
+  display: inline-flex;
+  align-items: center;
 
   &:hover {
     color: var(--color-hover);
@@ -15,6 +22,10 @@ export const Link = styled(NavLink)`
 
   &.active {
     color: var(--color-accent);
+  }
+
+  > svg {
+    margin-left: 5px;
   }
 `;
 

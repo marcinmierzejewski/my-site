@@ -6,7 +6,8 @@
   font-weight: 400;
   --color-dark: #222A36;
   --color-light: #ffffff;
-  --color-content: #ececec;
+  /* --color-content: #ffdbdb4f; */
+  --color-content: #ff45001f;
   --color-accent: #ff4500;
   --color-hover: #fd7645;
 

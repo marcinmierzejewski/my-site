@@ -7,9 +7,9 @@ export const Header = styled.header`
   max-width: 1280px;
   margin: 0 auto;
   gap: 12px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   font-size: 24px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 
   > nav {
     width: 100%;

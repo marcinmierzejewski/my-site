@@ -7,7 +7,7 @@ export const HeroWrapper = styled.div`
   justify-content: center;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 15px 50px;
+  padding: 0 15px;
 `;
 
 export const HeroLeft = styled.div`

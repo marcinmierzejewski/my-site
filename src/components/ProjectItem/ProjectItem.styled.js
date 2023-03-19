@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ProjectContent = styled.div`
   padding: 30px;
+  /* color: var(--color-dark); */
 `;
 
 export const ProjectWrapper = styled.li`
