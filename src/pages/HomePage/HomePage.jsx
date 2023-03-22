@@ -1,6 +1,7 @@
 import { BoxSection } from "../../components/Section/Section";
 import { Hero } from "../../components/Hero/Hero";
 import { Skills } from "../../components/Skills/Skills";
+import { Experience } from "../../components/Experience/Experience";
 
 const HomePage = () => {
   return (
@@ -10,28 +11,8 @@ const HomePage = () => {
         <Skills />
       </BoxSection>
       
-      <BoxSection title="Section two">
-        Tu będze sekcja druga
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia ab deserunt perferendis dolor! Dolorem nemo eum, in dolores distinctio libero officia sapiente commodi eligendi possimus inventore, id dolore corporis?
-        Eligendi voluptates corrupti sapiente cupiditate? Eius, veniam officia voluptates voluptate nulla dignissimos hic dolores est cum pariatur delectus doloribus tempore quia vitae, quisquam dicta. Sapiente perferendis voluptatibus amet nostrum quas!
-        Neque autem molestiae voluptatibus! Quibusdam mollitia consequatur animi dicta officia nulla commodi ipsa sed saepe in magni, quaerat, alias temporibus quod labore aut non. Ducimus quam exercitationem eum cumque sapiente.
-        Laudantium aut inventore facere excepturi distinctio, illo, vero possimus commodi perferendis pariatur ratione neque dignissimos nam? Molestias dolor soluta rem, facilis cumque ad alias, in assumenda veritatis facere debitis amet!
-        Cumque quisquam vel nobis doloribus esse sit fuga. Minima laboriosam eum, voluptas, exercitationem optio quam vel minus dolor ipsa, dolore illo quidem. Doloribus cum quae illo tempora magni rem asperiores?
-        Blanditiis, laborum! Sunt quidem maxime unde eius enim, non veniam dolores dolor minima pariatur id corrupti quisquam debitis velit maiores, magni laboriosam saepe! Officia, modi. Quis enim vitae quia inventore!
-        Animi impedit nemo corrupti dolor provident qui veritatis assumenda, optio ratione magnam, saepe incidunt sunt repellat rerum maxime natus eaque voluptate cumque dignissimos unde explicabo enim doloribus. Maiores, id placeat?
-        Quae, asperiores corrupti. Corrupti sint iusto nisi dolores eius. Mollitia recusandae, unde veritatis magni asperiores quae itaque aut reiciendis a, delectus molestias natus hic praesentium eos veniam quibusdam ex molestiae!
-        Ullam iusto ad vel impedit laborum ut distinctio delectus autem sunt animi error repellat, ex nam, tempora officia unde eum cum corporis! Culpa ullam mollitia voluptatum labore reiciendis officia repudiandae?
-        Delectus, nihil rerum? In, qui quam molestiae minima quo molestias, commodi incidunt dignissimos neque iusto expedita praesentium cupiditate alias. Voluptatem voluptatibus eius qui! Dolorem ex quas voluptate cupiditate ad? Ullam!
-        Autem velit rem excepturi necessitatibus fuga laboriosam dolore nesciunt, tenetur id quidem corrupti sequi ipsam, unde dolores quod neque. Nobis, suscipit pariatur! Perspiciatis modi, nam sequi temporibus sapiente consectetur ratione!
-        Quos nostrum iste illum blanditiis mollitia rem totam accusamus. Molestiae, ut fuga temporibus cum, exercitationem dignissimos amet laboriosam explicabo veritatis facilis omnis! Quod magnam dolorem ab provident explicabo optio dolor.
-        Voluptate debitis officia unde non asperiores. Blanditiis, recusandae quia nesciunt ipsam at dolore neque unde temporibus labore rem sed quidem ducimus numquam accusamus aspernatur saepe corporis, totam sunt itaque dignissimos?
-        Quas unde nulla consequatur itaque tempora nostrum exercitationem explicabo quam voluptatibus repudiandae. Quam, iure quaerat. Ab ex dolores saepe ad adipisci amet at, earum facere ducimus inventore excepturi quod veniam?
-        Architecto laboriosam eveniet qui nostrum assumenda voluptates ea temporibus magnam libero non, sed nihil incidunt est nam necessitatibus quam quaerat dolores ducimus asperiores velit voluptatibus atque. Molestias cupiditate in laboriosam?
-        Numquam iste, nobis soluta quisquam incidunt pariatur est magnam esse quibusdam voluptate quae amet provident asperiores repellat fuga error. Quod voluptatem laudantium voluptatibus excepturi, praesentium mollitia explicabo sunt adipisci incidunt.
-        Modi magni sunt dicta temporibus nostrum quos veritatis, qui, assumenda illo similique mollitia eum ipsam architecto nesciunt odio, dolores ad tempore aliquid placeat id ut cum et rerum accusamus. Omnis.
-        Neque, maxime porro quo sint, necessitatibus vitae vel magni quis blanditiis mollitia nostrum, nemo eaque perspiciatis ut. At molestias aperiam quisquam reiciendis est, impedit, consequatur tempore, aut officia totam deleniti.
-        Expedita, autem labore! Provident minus impedit beatae? Perspiciatis facilis voluptas qui earum? Saepe laboriosam sequi magnam cupiditate atque iste hic, aut consectetur dignissimos sed. Consequuntur veniam molestias voluptatibus obcaecati aspernatur?
-        Saepe error iusto fuga dicta nisi deleniti non cupiditate corporis omnis accusamus illum illo exercitationem eveniet accusantium esse eos, magnam ad quaerat ratione totam minima! Quos ex delectus recusandae obcaecati.
+      <BoxSection>
+        <Experience />
       </BoxSection>
       <BoxSection title="Next section 3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quam unde. Cupiditate facilis ipsa earum necessitatibus in ullam quidem adipisci numquam. Consequatur rerum et magnam reprehenderit sunt ipsa similique asperiores.

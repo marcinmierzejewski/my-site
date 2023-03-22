@@ -2,6 +2,8 @@
 
 :root {
   font-family: 'Teko', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-first: "Teko";
+  --font-second: "Playfair Display";
   line-height: 1.5;
   font-weight: 400;
   --color-dark: #222A36;
@@ -26,6 +28,7 @@ body {
   margin: 0;
   background: var(--color-light);
   transition: 0.3s;
+  overflow-x: hidden;
 }
 
 /*DARK MODE*/

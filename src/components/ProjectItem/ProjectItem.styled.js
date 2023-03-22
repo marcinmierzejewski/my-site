@@ -68,6 +68,11 @@ export const ContentBox = styled.div`
     letter-spacing: 0.03rem;
   }
 `;
+
+export const AboutPar = styled.p`
+  font-size: 18px;
+`;
+
 export const ButtonBox = styled.div`
   display: flex;
   justify-content: space-evenly;

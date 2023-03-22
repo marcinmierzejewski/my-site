@@ -23,7 +23,7 @@ export const HeroLeft = styled.div`
 
   > h1,
   h2 {
-    font-family: "Playfair Display";
+    font-family: var(--font-second);
     font-size: 40px;
     line-height: 120%;
     position: relative;
@@ -97,12 +97,14 @@ export const ButtonWrapper = styled.div`
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 30px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 480px) {
     margin-top: 50px;
-    }
+  }
 
   @media screen and (min-width: 768px) {
     justify-content: left;
+    margin-bottom: 0;
   }
 `;

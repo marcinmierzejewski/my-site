@@ -1,4 +1,4 @@
-import { ProjectWrapper, ProjectContent, ImageBox, ProjectImage, ContentBox, ButtonBox } from "./ProjectItem.styled";
+import { ProjectWrapper, ProjectContent, ImageBox, AboutPar, ProjectImage, ContentBox, ButtonBox } from "./ProjectItem.styled";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 
 
@@ -11,7 +11,7 @@ export const ProjectItem = ({ title, image, about, usedSkills, repoLink, pageLin
         </ImageBox>
         <ContentBox>
           <h3>{title}</h3>
-          <p>{about}</p>
+          <AboutPar>{about}</AboutPar>
           <p>Created using: {usedSkills}</p>
           <ButtonBox>
             <button>
