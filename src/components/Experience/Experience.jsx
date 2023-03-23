@@ -5,7 +5,12 @@ import {
   ExperienceYears,
   ExperienceContent,
 } from "./Experience.styled";
-import { HiOutlinePlusSm } from "react-icons/hi";
+import {
+  HiOutlinePlusSm,
+  HiOutlineAcademicCap,
+  HiOutlineBookOpen,
+  HiOutlineBeaker,
+} from "react-icons/hi";
 
 export const Experience = () => {
   return (
@@ -28,16 +33,37 @@ export const Experience = () => {
         </h3>
         <ul>
           <li>
-            Go IT
-            <p>overlay</p>
+            <p>from 11.2022 to 12.2023</p>
+            <p>13 month hardworking</p>
+            <p>20+ personal projects</p>
+            <p>4 group project</p>
+            <div>
+              <HiOutlineAcademicCap size={30} />
+              <p>GoIT Polska</p>
+              <p>FullStack Web Developer</p>
+            </div>
           </li>
           <li>
-            TypeScript
-            <p>overlay</p>
+            <p>
+              Boost your JavaScript projects with TypeScript: Learn all about
+              core types, generics, TypeScript + React or Node & more!
+            </p>
+            <div>
+              <HiOutlineBookOpen size={30} />
+              <p>Udemy.com</p>
+              <p>Understanding TypeScript</p>
+            </div>
           </li>
           <li>
-            JavaScript
-            <p>overlay</p>
+            <p>
+              The modern JavaScript course! Master JavaScript with projects,
+              challenges and theory. Many courses in one!
+            </p>
+            <div>
+              <HiOutlineBeaker size={30} />
+              <p>Udemy.com</p>
+              <p>The Complete JavaScript Course</p>
+            </div>
           </li>
         </ul>
       </ExperienceContent>

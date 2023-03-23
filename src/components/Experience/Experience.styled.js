@@ -77,8 +77,8 @@ export const ExperienceContent = styled.div`
     @media screen and (min-width: 768px) {
       font-size: 32px;
     }
-    @media screen and (min-width: 768px) {
-      font-size: 32px;
+    @media screen and (min-width: 1024px) {
+      font-size:40px;
     }
   }
   > ul {
@@ -91,20 +91,32 @@ export const ExperienceContent = styled.div`
     > li {
       width: 230px;
       height: 230px;
+      font-size: 20px;
+      padding: 20px;
       background-color: var(--color-content);
       position: relative;
       overflow: hidden;
-      &:hover p {
-        transform: translateX(0);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      &:hover div {
+        transform: translateX(105%);
       }
-      > p {
+      
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        transform: translateX(-105%);
-        background-color: red;
+        padding: 20px;
+        transform: translateX(0);
+        background-color: #fd7645;
         transition: all 250ms linear;
       }
     }
