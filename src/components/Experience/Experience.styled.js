@@ -88,18 +88,20 @@ export const ExperienceContent = styled.div`
     margin-top: 30px;
     flex-wrap: wrap;
     gap: 15px;
+    color: var(--color-dark);
     > li {
       width: 230px;
       height: 230px;
-      font-size: 20px;
+      font-size: 22px;
       padding: 20px;
-      background-color: var(--color-content);
+      background-color: var(--color-accent);
       position: relative;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-end;
+      box-shadow: 0 0 10px var(--color-accent);
       &:hover div {
         transform: translateX(105%);
       }
@@ -115,8 +117,9 @@ export const ExperienceContent = styled.div`
         width: 100%;
         height: 100%;
         padding: 20px;
+        font-size: 20px;
         transform: translateX(0);
-        background-color: #fd7645;
+        background-color: rgb(127,127,127);
         transition: all 250ms linear;
       }
     }
