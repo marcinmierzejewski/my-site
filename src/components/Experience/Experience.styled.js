@@ -119,7 +119,7 @@ export const ExperienceContent = styled.div`
         padding: 20px;
         font-size: 20px;
         transform: translateX(0);
-        background-color: rgb(127,127,127);
+        background-color: rgb(221,227,226);
         transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
       }
     }

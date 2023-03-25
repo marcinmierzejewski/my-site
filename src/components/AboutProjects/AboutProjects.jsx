@@ -1,4 +1,5 @@
 import { StatisticBox, StatisticList, SwiperBox } from "./AboutProjects.styled";
+import { SlideProjects } from "../SlideProjects/SlideProjects";
 
 export const AboutProjects = () => {
   return (
@@ -22,7 +23,9 @@ export const AboutProjects = () => {
           <p>12 +</p>{" "}
         </li>
       </StatisticList>
-      <SwiperBox>Swider place</SwiperBox>
+      <SwiperBox>
+        <SlideProjects />
+      </SwiperBox>
     </StatisticBox>
   );
 };

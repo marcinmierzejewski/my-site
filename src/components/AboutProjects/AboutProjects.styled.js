@@ -43,6 +43,13 @@ export const StatisticList = styled.ul`
 `;
 
 export const SwiperBox = styled.div`
-  width: 100%;
+  max-width: 100%;
+  height: 800px;
   background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    min-width: 600px;
+    }
 `;
