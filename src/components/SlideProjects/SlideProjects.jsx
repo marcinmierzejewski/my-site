@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import projects from "../ProjectsList/projects.json";
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,23 +20,27 @@ export const SlideProjects = () => {
         loop={true}
         pagination={{
           clickable: true,
+          dynamicBullets: true,
         }}
-        navigation={true}
+        // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{
           delay: 4500,
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {projects?.map((project) => (
+          <SwiperSlide key={project.id}>
+            <div className="swiperBox">
+              <img src={`${project.image}`} />
+              <div className="swiperContent">
+                <h4>{project.title}</h4>
+                <p>{project.usedSkills}</p>                  
+                <p className="arrowBox"></p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

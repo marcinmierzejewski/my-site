@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StatisticBox = styled.div`
   display: flex;
   flex-direction: column;
+  color: inherit;
   @media screen and (min-width: 1024px) {
     flex-direction: row-reverse;
   }
@@ -36,20 +37,60 @@ export const StatisticList = styled.ul`
         font-size: 56px;
       }
       @media screen and (min-width: 1024px) {
-      font-size: 60px;
-    }
+        font-size: 60px;
+      }
     }
   }
 `;
 
 export const SwiperBox = styled.div`
   max-width: 100%;
-  height: 800px;
-  background-color: red;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    min-width: 600px;
+  }
+`;
+
+export const ButtonSlider = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 1024px) {
-    min-width: 600px;
-    }
+  font-family: var(--font-main);
+  color: inherit;
+  font-size: 24px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-accent);
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 4px #00000026;
+  fill: white;
+  @media screen and (min-width: 480px) {
+    font-size: 30px;
+    padding: 5px 20px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px var(--color-accent);
+    transition: all 250ms linear;
+  }
+
+  > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  > svg {
+    margin-left: 10px;
+  }
 `;

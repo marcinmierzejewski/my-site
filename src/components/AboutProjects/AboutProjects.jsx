@@ -1,5 +1,13 @@
-import { StatisticBox, StatisticList, SwiperBox } from "./AboutProjects.styled";
+import {
+  StatisticBox,
+  StatisticList,
+  SwiperBox,
+  ButtonSlider,
+} from "./AboutProjects.styled";
 import { SlideProjects } from "../SlideProjects/SlideProjects";
+import { Link } from "react-router-dom";
+import { HiOutlinePresentationChartBar } from "react-icons/hi";
+
 
 export const AboutProjects = () => {
   return (
@@ -15,16 +23,17 @@ export const AboutProjects = () => {
           <p>100 + </p>
         </li>
         <li>
-          <p>contributors</p>
-          <p>880 + </p>
-        </li>
-        <li>
           <p>personal projects</p>
           <p>12 +</p>{" "}
         </li>
       </StatisticList>
       <SwiperBox>
         <SlideProjects />
+        <Link to="/projects">
+          <ButtonSlider>
+            Go to Projects <HiOutlinePresentationChartBar />
+          </ButtonSlider>
+        </Link>
       </SwiperBox>
     </StatisticBox>
   );
