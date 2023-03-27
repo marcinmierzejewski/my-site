@@ -17,8 +17,8 @@ export const HeroLeft = styled.div`
     width: 50%;
     text-align: left;
     justify-content: left;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   > h1,

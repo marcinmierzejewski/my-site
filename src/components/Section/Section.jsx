@@ -1,8 +1,8 @@
 import { Section, Wrapper } from "./Section.styled";
 
-export const BoxSection = ({ title, children, isBlack=false}) => {
+export const BoxSection = ({ title, children, bgColor }) => {
   return (
-    <Section isBlack={isBlack}>      
+    <Section bgColor={bgColor}>      
       <Wrapper>
         <h2>{title}</h2>
         {children}

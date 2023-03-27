@@ -8,14 +8,13 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <BoxSection isBlack={true}>
+      <BoxSection bgColor="isDark">
         <Skills />
-      </BoxSection>
-      
+      </BoxSection>      
       <BoxSection>
         <Experience />
       </BoxSection>
-      <BoxSection>
+      <BoxSection bgColor="isGrey">
         <AboutProjects />
       </BoxSection>
     </>
