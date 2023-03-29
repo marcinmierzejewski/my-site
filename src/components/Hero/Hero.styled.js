@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroImg from "./hero2.jpg";
+import heroImg from "./hero.jpg";
 
 export const HeroWrapper = styled.div`
   display: flex;

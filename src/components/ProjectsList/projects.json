@@ -2,8 +2,8 @@
   {
     "image": "./images/phonebook.png",
     "title": "Phonebook",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "An application that uses authorization of the user who, after logging in, has access to his contacts. Ability to add new contacts, as well as delete unnecessary ones. Using react-router-dom for navigation and createAsyncThunk for authorization",
+    "usedSkills": "React, React-Router, Redux, JavaScript",
     "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-08-phonebook",
     "pageLink": "https://phonebook-react-redux-usermenu-mm.netlify.app/",
     "id": 1001
@@ -11,8 +11,8 @@
   {
     "image": "./images/questify.png",
     "title": "Questify",
-    "about": "Demo12345 demo@demo.pl acja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "Demo loggin: password: Demo12345 login: demo@demo.pl An application used to create tasks and challenges with the ability to delete and edit created cards. After completing the task, the card can be moved to the done section. Overview of active and uncompleted tasks. Only for registered users. Team project finals from the GoIT course. I was the Team Leader on the project. Data fetching used by Redux Toolkit's 'RTK Query' ",
+    "usedSkills": "React, Redux, React-Router, JavaScript, Styled-Components, SCSS",
     "repoLink": "https://github.com/marcinmierzejewski/goit-final-project-questify",
     "pageLink": "https://final-project-questify.netlify.app/",
     "id": 1002
@@ -20,8 +20,8 @@
   {
     "image": "./images/movies.png",
     "title": "Movies search",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "Simple React-Route application with the movie database using API: api.themoviedb.org. Shows the most popular videos of the day. Ability to search for any movie title ",
+    "usedSkills": "React, React-Router, JavaScript, CSS",
     "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-05-movies",
     "pageLink": "https://goit-react-hw-05-movies-mm.netlify.app/",
     "id": 1007
@@ -29,8 +29,8 @@
   {
     "image": "./images/imagesearchreact.png",
     "title": "Image search - React",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "Photo search engine from the popular site pixabay.com. After click on picture, you can view them on large size. You can view more images by press 'Load more' button. Data fetching by axios, using search params",
+    "usedSkills": "React, JavaScript",
     "repoLink": "https://github.com/marcinmierzejewski/goit-react-hw-04-hooks-images",
     "pageLink": "https://marcinmierzejewski.github.io/goit-react-hw-04-hooks-images/",
     "id": 1008
@@ -38,8 +38,8 @@
   {
     "image": "./images/booster.png",
     "title": "Event booster",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "Searching event in Your country. Pagination",
+    "usedSkills": "JavaScript, SCSS ",
     "repoLink": "https://github.com/marcinmierzejewski/goit-js-team-project",
     "pageLink": "https://marcinmierzejewski.github.io/goit-js-team-project/",
     "id": 1003

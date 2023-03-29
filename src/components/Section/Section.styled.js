@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const setBackgroundColor = (bgColor) => {
-  switch(bgColor) {
+  switch (bgColor) {
     case "isDark":
       return "#000000";
 
@@ -9,9 +9,9 @@ const setBackgroundColor = (bgColor) => {
       return "#00000015";
 
     default:
-      return "inherit";      
+      return "inherit";
   }
-}
+};
 
 export const Section = styled.section`
   padding-top: 50px;
@@ -20,9 +20,8 @@ export const Section = styled.section`
   @media screen and (min-width: 768px) {
     padding-top: 80px;
     padding-bottom: 80px;
-    }
+  }
 `;
-
 
 export const Wrapper = styled.div`
   max-width: 1280px;
