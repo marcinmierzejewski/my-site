@@ -6,14 +6,14 @@ export const ConnectWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  > div:not(:last-child) {
+  > div {
     margin-bottom: 80px;
     width: 50%;
   }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    > div:not(:last-child) {
+    > div {
       margin-bottom: 0;
       margin-left: 80px;
     }
