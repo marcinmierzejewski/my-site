@@ -4,6 +4,7 @@ import { Skills } from "../../components/Skills/Skills";
 import { Experience } from "../../components/Experience/Experience";
 import { AboutProjects } from "../../components/AboutProjects/AboutProjects";
 import { Connect } from "../../components/Connect/Connect";
+import { Footer } from "../../components/Footer/Footer";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
       <BoxSection bgColor="isDark">
         <Connect />
       </BoxSection>
+      <Footer />
     </>
   );
 };
