@@ -6,16 +6,15 @@ export const ConnectWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  > div {
+  > div:first-child {
     margin-bottom: 80px;
     width: 50%;
   }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    > div {
+    > div:first-child {
       margin-bottom: 0;
-      margin-left: 80px;
     }
   }
 `;
@@ -24,6 +23,7 @@ export const ConnectText = styled.div`
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: var(--color-light);
   @media screen and (min-width: 480px) {
     font-size: 70px;
   }
@@ -36,6 +36,7 @@ export const SocialMedia = styled.ul`
   align-items: center;
   justify-content: space-between;
   max-width: 260px;
+  color: var(--color-light);
 
   > li {
     > svg {
@@ -60,7 +61,7 @@ export const ConnectForm = styled.form`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  min-width: 260px;
+  /* min-width: 260px; */
   font-size: 36px;
   color: var(--color-light);
 `;
@@ -72,17 +73,24 @@ export const InputBox = styled.div`
 
   > input {
     height: 70px;
-    font-size: 30px;
+    font-size: 24px;
+    width: 100%;
     outline: none;
     border: none;
     background: transparent;
     color: var(--color-light);
     padding-left: 16px;
     transition: all 250ms linear;
+    @media screen and (min-width: 480px) {
+      font-size: 30px;
+    }
 
     &:focus {
       ~ label {
-        font-size: 30px;
+        font-size: 28px;
+        @media screen and (min-width: 480px) {
+          font-size: 30px;
+        }
       }
     }
   }
@@ -93,10 +101,13 @@ export const InputBox = styled.div`
     position: absolute;
     width: 100%;
     height: 1px;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
-    background-color: ${(props) => (props.isActive ? "#ffffff" : "grey")};
+    background-color: ${(props) => (props.isActive ? "#ffffff" : "rgba(255, 255, 255, 0.75)")};
     z-index: 5;
+    @media screen and (min-width: 480px) {
+      bottom: 5px;
+    }
   }
 
   > textarea {
@@ -110,7 +121,10 @@ export const InputBox = styled.div`
     top: -30px;
     left: 0;
     color: ${(props) => (props.isActive ? "var(--color-hover)" : "inherit")};
-    font-size: ${(props) => (props.isActive ? "30px" : "26px")};
+    font-size: ${(props) => (props.isActive ? "28px" : "24px")};
     transition: all 250ms linear;
+    @media screen and (min-width: 480px) {
+      font-size: ${(props) => (props.isActive ? "30px" : "26px")};
+    }
   }
 `;

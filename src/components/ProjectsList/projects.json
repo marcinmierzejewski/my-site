@@ -11,7 +11,7 @@
   {
     "image": "./images/questify.png",
     "title": "Questify",
-    "about": "Demo loggin: password: Demo12345 login: demo@demo.pl An application used to create tasks and challenges with the ability to delete and edit created cards. After completing the task, the card can be moved to the done section. Overview of active and uncompleted tasks. Only for registered users. Team project finals from the GoIT course. I was the Team Leader on the project. Data fetching used by Redux Toolkit's 'RTK Query' ",
+    "about": "Demo loggin: password: Demo12345 login: demo@demo.pl An application used to create tasks and challenges with the ability to delete and edit created cards. After completing the task, the card can be moved to the done section. Overview of active and uncompleted tasks. Only for registered users. Team project finals of the GoIT course. I was the Team Leader on this project. Data fetching used by Redux Toolkit's 'RTK Query' ",
     "usedSkills": "React, Redux, React-Router, JavaScript, Styled-Components, SCSS",
     "repoLink": "https://github.com/marcinmierzejewski/goit-final-project-questify",
     "pageLink": "https://final-project-questify.netlify.app/",
@@ -38,8 +38,8 @@
   {
     "image": "./images/booster.png",
     "title": "Event booster",
-    "about": "Searching event in Your country. Pagination",
-    "usedSkills": "JavaScript, SCSS ",
+    "about": "Searching event in Your country. Used axios to data fetch from API. Using custom Pagination. Used font from Google Fonts. Mobile-first design responisve. Final group project of the JavaScript module, when I was the Team Leader.",
+    "usedSkills": "JavaScript, SCSS, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/goit-js-team-project",
     "pageLink": "https://marcinmierzejewski.github.io/goit-js-team-project/",
     "id": 1003
@@ -47,8 +47,8 @@
   {
     "image": "./images/imagesearch.png",
     "title": "Image search",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "Photo search engine from the popular site pixabay.com. After click on picture, you can view them on large size. You can view more images by press 'Load more' button. Data fetching by axios, using search params",
+    "usedSkills": "JavaScript, SCSS, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/goit-js-hw-11",
     "pageLink": "https://marcinmierzejewski.github.io/goit-js-hw-11/",
     "id": 1004
@@ -56,8 +56,8 @@
   {
     "image": "./images/hell.png",
     "title": "Hellish English",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "An example of a Company website. Used BEM methodology for class name. Used the SASS preprocessor. Imported minified style sheet in the form of 'css/main.min.css'. The main style properties are created as Variables. Mobile-first design responisve.",
+    "usedSkills": "JavaScript, SCSS, BEM, HTMLL",
     "repoLink": "https://github.com/marcinmierzejewski/hell",
     "pageLink": "https://marcinmierzejewski.github.io/hell/",
     "id": 1005
@@ -65,8 +65,8 @@
   {
     "image": "./images/ice.png",
     "title": "Ice Cream",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "Final group project of the HTML/CSS module, when I was the Team Leader. The Ice Cream Company Website. Used BEM methodology for class name. Implemented process to include HTML partials inside of another HTML file. Used the SASS preprocessor. Imported minified style sheet in the form of 'css/main.min.css'. The main style properties are created as Variables. Mobile-first design responisve.",
+    "usedSkills": "JavaScript, SCSS, BEM, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/team-project-goit",
     "pageLink": "https://marcinmierzejewski.github.io/team-project-goit/",
     "id": 1010
@@ -74,8 +74,8 @@
   {
     "image": "./images/webstudio.png",
     "title": "Web Studio",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "The Web Studio Company Website, created with Mobile-first design. All background and content raster images are responsive and support x1 and x2 pixel density. All classes named by BEM methodology. Imported minified style sheet, created by preprocessor SASS. The main style properties are created as Variables.",
+    "usedSkills": "JavaScript, SCSS, BEM, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/goit-markup-hw-08",
     "pageLink": "https://marcinmierzejewski.github.io/goit-markup-hw-08/",
     "id": 1011
@@ -83,8 +83,8 @@
   {
     "image": "./images/barber.png",
     "title": "Barber shop",
-    "about": "Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków Aplikacja, wykorzystująca autoryzację użytkownika. Aplikacja przechowująca spis kontaków",
-    "usedSkills": "React, Redux, JavaScript",
+    "about": "   ",
+    "usedSkills": "JavaScript, CSS, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/barbershop",
     "pageLink": "https://marcinmierzejewski.github.io/barbershop/",
     "id": 1012

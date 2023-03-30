@@ -91,7 +91,7 @@ export const Connect = () => {
               onChange={inputChange}
               required
             />
-            <label htmlFor="form_name">Name</label>
+            <label htmlFor="form_name">Your name:</label>
           </InputBox>
 
           <InputBox isActive={email}>
@@ -105,7 +105,7 @@ export const Connect = () => {
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               required
             />
-            <label htmlFor="form_email">Email</label>
+            <label htmlFor="form_email">Your email address:</label>
           </InputBox>
 
           <InputBox isActive={message}>
@@ -119,7 +119,7 @@ export const Connect = () => {
               title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               required
             />
-            <label htmlFor="form_message">Message</label>
+            <label htmlFor="form_message">Your message:</label>
           </InputBox>
 
           <button type="submit">Send</button>
