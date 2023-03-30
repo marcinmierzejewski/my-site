@@ -1,6 +1,11 @@
 import { useEffect, useState, useRef } from "react";
 import emailjs, { init } from "@emailjs/browser";
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaGithubSquare,
+  FaLinkedin,
+  FaArrowRight,
+} from "react-icons/fa";
 import {
   ConnectWrapper,
   ConnectText,
@@ -121,8 +126,9 @@ export const Connect = () => {
             />
             <label htmlFor="form_message">Your message:</label>
           </InputBox>
-
-          <button type="submit">Send</button>
+          <button type="submit">
+            Send <FaArrowRight />
+          </button>
         </ConnectForm>
       </div>
     </ConnectWrapper>

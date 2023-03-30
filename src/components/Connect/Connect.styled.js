@@ -64,6 +64,30 @@ export const ConnectForm = styled.form`
   /* min-width: 260px; */
   font-size: 36px;
   color: var(--color-light);
+  padding-top:30px;
+  > button {
+    border: none;
+    background: transparent;
+    color: var(--color-light);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: var(--color-hover);
+    }
+    @media screen and (min-width: 480px) {
+      font-size: 40px;
+    }
+    > svg {
+      margin-left: 20px;
+      width: 20px;
+      @media screen and (min-width: 480px) {
+        width: 30px;
+      }
+    }
+  }
 `;
 
 export const InputBox = styled.div`
@@ -103,7 +127,8 @@ export const InputBox = styled.div`
     height: 1px;
     bottom: 10px;
     left: 0;
-    background-color: ${(props) => (props.isActive ? "#ffffff" : "rgba(255, 255, 255, 0.75)")};
+    background-color: ${(props) =>
+      props.isActive ? "#ffffff" : "rgba(255, 255, 255, 0.75)"};
     z-index: 5;
     @media screen and (min-width: 480px) {
       bottom: 5px;
