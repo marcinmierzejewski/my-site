@@ -15,7 +15,7 @@ export const NavBar = ({ setIsOpen }) => {
           Projects
           <HiOutlinePresentationChartBar />
         </Link>
-        <Link to="/third">Layout3</Link>
+        <Link to="/about">About</Link>
       </LinkBox>
       <ToolsMenu />
       <MoreBtn onClick={() => setIsOpen(true)} type="button">
