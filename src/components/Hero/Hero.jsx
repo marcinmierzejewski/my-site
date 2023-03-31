@@ -18,7 +18,6 @@ export const Hero = () => {
      
     </HeroLeft>
     <HeroRight>
-      Something to adds
     </HeroRight>
       
     </HeroWrapper>

@@ -66,6 +66,10 @@ export const HeroLeft = styled.div`
     font-size: 22px;
     line-height: 180%;
     opacity: 0.5;
+    > span {
+      color: var(--color-hover);
+      opacity: 1;
+    }
     @media screen and (min-width: 480px) {
       font-size: 26px;
     }

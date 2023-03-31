@@ -37,7 +37,7 @@ export const FormWrapper = styled.div`
     right: 50%;
     width: 380px;
     padding: 20px;
-  }    
+  }
 
   @media screen and (min-width: 768px) {
     right: 100%;
@@ -142,7 +142,8 @@ export const SubmitButton = styled.button`
   padding: 5px 20px;
   border: none;
   border-radius: 5px;
-  background: ${(props) => (props.isAvailable ? "var(--color-accent)" : "rgba(255, 255, 255, 0.3)")};
+  background: ${(props) =>
+    props.isAvailable ? "var(--color-accent)" : "rgba(255, 255, 255, 0.3)"};
   pointer-events: ${(props) => (props.isAvailable ? "auto" : "none")};
   cursor: pointer;
   position: relative;
@@ -159,5 +160,27 @@ export const SubmitButton = styled.button`
   > img {
     height: 20px;
     margin-right: 10px;
+  }
+`;
+
+export const CloseBtn = styled.button`
+  color: var(--color-light);
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms linear;
+  &:hover {
+    color: var(--color-accent);
+  }
+  > svg {
+    height: 30px;
+    width: 30px;
   }
 `;

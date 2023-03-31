@@ -12,6 +12,7 @@ import {
   SocialMedia,
   ConnectForm,
   InputBox,
+  ConnectButton,
 } from "./Connect.styled";
 
 export const Connect = () => {
@@ -75,13 +76,25 @@ export const Connect = () => {
         </ConnectText>
         <SocialMedia>
           <li>
-            <FaFacebookSquare />
+            <a
+              href="https://www.facebook.com/marcin.mierzejewski.16/"
+              target="_blank"
+            >
+              <FaFacebookSquare />
+            </a>
           </li>
           <li>
-            <FaGithubSquare />
+            <a href="https://github.com/marcinmierzejewski" target="_blank">
+              <FaGithubSquare />
+            </a>
           </li>
           <li>
-            <FaLinkedin />
+            <a
+              href="https://www.linkedin.com/in/marcin-mierzejewski-a85257221/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
           </li>
         </SocialMedia>
       </div>
@@ -126,9 +139,9 @@ export const Connect = () => {
             />
             <label htmlFor="form_message">Your message:</label>
           </InputBox>
-          <button type="submit">
+          <ConnectButton type="submit" isAvailable={name && email && message}>
             Send <FaArrowRight />
-          </button>
+          </ConnectButton>
         </ConnectForm>
       </div>
     </ConnectWrapper>

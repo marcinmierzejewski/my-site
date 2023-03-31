@@ -11,7 +11,7 @@
   {
     "image": "./images/questify.png",
     "title": "Questify",
-    "about": "Demo loggin: password: Demo12345 login: demo@demo.pl An application used to create tasks and challenges with the ability to delete and edit created cards. After completing the task, the card can be moved to the done section. Overview of active and uncompleted tasks. Only for registered users. Team project finals of the GoIT course. I was the Team Leader on this project. Data fetching used by Redux Toolkit's 'RTK Query' ",
+    "about": "Demo: password: Demo12345, login: demo@demo.pl An application used to create tasks and challenges with the ability to delete and edit created cards. After completing the task, the card can be moved to the done section. Overview of active and uncompleted tasks. Only for registered users. Team project finals of the GoIT course. I was the Team Leader on this project. Data fetching used by Redux Toolkit's 'RTK Query' ",
     "usedSkills": "React, Redux, React-Router, JavaScript, Styled-Components, SCSS",
     "repoLink": "https://github.com/marcinmierzejewski/goit-final-project-questify",
     "pageLink": "https://final-project-questify.netlify.app/",
@@ -56,8 +56,8 @@
   {
     "image": "./images/hell.png",
     "title": "Hellish English",
-    "about": "An example of a Company website. Used BEM methodology for class name. Used the SASS preprocessor. Imported minified style sheet in the form of 'css/main.min.css'. The main style properties are created as Variables. Mobile-first design responisve.",
-    "usedSkills": "JavaScript, SCSS, BEM, HTMLL",
+    "about": "An example of a Company website. Used BEM methodology for class name. Used the SASS preprocessor. Imported minified style sheet in the form of 'css/main.min.css'. The main style properties are created as Variables. Mobile-first design responsive.",
+    "usedSkills": "JavaScript, SCSS, BEM, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/hell",
     "pageLink": "https://marcinmierzejewski.github.io/hell/",
     "id": 1005
@@ -65,7 +65,7 @@
   {
     "image": "./images/ice.png",
     "title": "Ice Cream",
-    "about": "Final group project of the HTML/CSS module, when I was the Team Leader. The Ice Cream Company Website. Used BEM methodology for class name. Implemented process to include HTML partials inside of another HTML file. Used the SASS preprocessor. Imported minified style sheet in the form of 'css/main.min.css'. The main style properties are created as Variables. Mobile-first design responisve.",
+    "about": "Final group project of the HTML/CSS module, when I was the Team Leader. The Ice Cream Company Website. Used BEM methodology for class name. Implemented process to include HTML partials inside of another HTML file. Used the SASS preprocessor. Imported minified style sheet in the form of 'css/main.min.css'. The main style properties are created as Variables. Mobile-first design responsive.",
     "usedSkills": "JavaScript, SCSS, BEM, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/team-project-goit",
     "pageLink": "https://marcinmierzejewski.github.io/team-project-goit/",
@@ -83,7 +83,7 @@
   {
     "image": "./images/barber.png",
     "title": "Barber shop",
-    "about": "   ",
+    "about": "Barber shop Website. The main style properties are created as Variables. Used font from Google Fonts.",
     "usedSkills": "JavaScript, CSS, HTML",
     "repoLink": "https://github.com/marcinmierzejewski/barbershop",
     "pageLink": "https://marcinmierzejewski.github.io/barbershop/",

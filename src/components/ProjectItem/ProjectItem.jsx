@@ -16,12 +16,12 @@ export const ProjectItem = ({ title, image, about, usedSkills, repoLink, pageLin
           <ButtonBox>
             <button>
               <a href={repoLink} target="_blank">
-                <HiOutlineChevronDoubleRight/> Repo
+                <HiOutlineChevronDoubleRight/> Source Code
               </a>
             </button>
             <button>
               <a href={pageLink} target="_blank">
-                <HiOutlineChevronDoubleRight /> Pages
+                <HiOutlineChevronDoubleRight /> Live Page
               </a>
             </button>
           </ButtonBox>

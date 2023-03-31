@@ -87,7 +87,7 @@ export const ButtonBox = styled.div`
     padding: 5px 20px;
     border: none;
     border-radius: 20px;
-    width: 120px;
+    min-width: 120px;
     background: var(--color-accent);
     cursor: pointer;
     transition: all 250ms linear;

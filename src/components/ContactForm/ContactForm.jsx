@@ -4,6 +4,7 @@ import {
   FormWrapper,
   FormBoxText,
   SubmitButton,
+  CloseBtn,
 } from "./ContactForm.styled";
 import emailjs, { init } from "@emailjs/browser";
 import {
@@ -11,6 +12,7 @@ import {
   IoIosPhonePortrait,
   IoIosMail,
   IoIosFiling,
+  IoIosCloseCircleOutline,
 } from "react-icons/io";
 
 export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
@@ -93,6 +95,9 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
       <FormWrapper formIsOpen={formIsOpen}>
         <form onSubmit={valueSubmit} ref={form}>
           <p>Contact me!</p>
+          <CloseBtn onClick={() => setFormIsOpen(false)}>
+            <IoIosCloseCircleOutline />
+          </CloseBtn>
           <FormBoxText isActive={name}>
             <input
               type="text"
@@ -128,8 +133,6 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               name="email"
               value={email}
               onChange={inputChange}
-              // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-              title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               required
             />
             <span>
@@ -138,22 +141,11 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
             <label>E-mail</label>
           </FormBoxText>
           <FormBoxText isActive={message}>
-            {/* <textarea
-                type="text"
-                name="message"
-                value={message}
-                onChange={inputChange}
-                cols="30"
-                rows="10"
-                required
-              /> */}
             <input
               type="text"
               name="message"
               value={message}
               onChange={inputChange}
-              // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-              title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               required
             />
             <span>
