@@ -1,10 +1,13 @@
 import { Suspense, useState } from "react";
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 import { useAsideMenuIsOpen } from "../../hooks/useAsideMenuIsOpen";
-import { Header } from './SharedLayout.styled';
-import {Loader} from "../Loader/Loader";
+import { Header } from "./SharedLayout.styled";
+import { Loader } from "../Loader/Loader";
 import { NavBar } from "../NavBar/NavBar";
 import { AsideMenu } from "../AsideMenu/AsideMenu";
+import { BoxSection } from "../Section/Section";
+import { Connect } from "../Connect/Connect";
+import { Footer } from "../Footer/Footer";
 
 export const SharedLayout = () => {
   // const [isOpen, setIsOpen] = useState(false)
@@ -13,12 +16,16 @@ export const SharedLayout = () => {
   return (
     <>
       <Header>
-        <NavBar setIsOpen={setIsOpen} />  
-        <AsideMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
+        <NavBar setIsOpen={setIsOpen} />
+        <AsideMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       </Header>
       <Suspense fallback={<Loader />}>
         <Outlet />
-      </Suspense>      
+      </Suspense>
+      <BoxSection bgColor="isDark">
+        <Connect />
+      </BoxSection>
+      <Footer />
     </>
   );
 };
