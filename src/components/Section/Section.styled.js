@@ -13,10 +13,20 @@ const setBackgroundColor = (bgColor) => {
   }
 };
 
+const setLinearBackground = (linearColor) => {
+  switch(linearColor) {
+    case "isLinear":
+        return "linear-gradient(to bottom, #111518 40%, #fff 40%);";
+    default:
+      return "none";
+  }
+}
+
 export const Section = styled.section`
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: ${(props) => setBackgroundColor(props.bgColor)};
+  background-image: ${(props) => setLinearBackground(props.linearColor)};
   @media screen and (min-width: 768px) {
     padding-top: 80px;
     padding-bottom: 80px;

@@ -16,11 +16,11 @@ export const EducationWrapper = styled.div`
     font-size: 40px;
   }
   > h3 {
-    font-size: 1.15em;
+    font-size: 1.4em;
     margin-bottom: 0.5em;
   }
 
-  > p {
+  > ul > li > p {
     font-size: 1em;
     margin-bottom: 0.5em;
   }

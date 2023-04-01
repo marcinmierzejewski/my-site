@@ -97,7 +97,7 @@ body.dark .handle::before {
 }
 /*END DARK MODE*/
 
-h1, h2, h3, h4, p, ul{
+h1, h2, h3, h4, h5, p, ul{
   padding: 0;
   margin: 0;
 }

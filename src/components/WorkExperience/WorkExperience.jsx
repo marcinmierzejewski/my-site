@@ -1,11 +1,13 @@
+import { WorkWrapper } from "./WorkExperience.styled"
+
 export const WorkExperience = () => {
   return (
-    <>
+    <WorkWrapper>
        <h3> WORK EXPERIENCE</h3>
         <ul>
           <li>
             <h4>Junior Project Manager</h4>
-            <p>PKP Polskie linie Kolejowe S,A. | February 2020 - present</p>
+            <h5>PKP Polskie linie Kolejowe S,A. | February 2020 - present</h5>
             <p>
               Responsibilities: Participation in the development of
               comprehensive tender documentation. Implementation of contracts
@@ -16,7 +18,7 @@ export const WorkExperience = () => {
           </li>
           <li>
             <h4>Surveyor</h4>
-            <p>Geo-Pix | March 2011 - February 2020</p>
+            <h5>Geo-Pix | March 2011 - February 2020</h5>
             <p>
               Responsibilities: Managing the measurement team during the
               implementation of construction processes. Analysis of construction
@@ -27,6 +29,6 @@ export const WorkExperience = () => {
         </ul>
     
     
-    </>
+    </WorkWrapper>
   )
 }

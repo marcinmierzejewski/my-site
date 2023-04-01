@@ -12,7 +12,7 @@ const ThirdPage = () => {
       <BoxSection bgColor="isDark">
         <Education />
       </BoxSection>
-      <BoxSection>
+      <BoxSection bgColor="isGrey" >
         <WorkExperience />
       </BoxSection>      
     </>
