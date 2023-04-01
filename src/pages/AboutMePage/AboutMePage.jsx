@@ -9,12 +9,12 @@ const ThirdPage = () => {
       <BoxSection>
         <AboutMe />
       </BoxSection>
-      <BoxSection>
-        <WorkExperience />
-      </BoxSection>
-      <BoxSection>
+      <BoxSection bgColor="isDark">
         <Education />
       </BoxSection>
+      <BoxSection>
+        <WorkExperience />
+      </BoxSection>      
     </>
   );
 };
