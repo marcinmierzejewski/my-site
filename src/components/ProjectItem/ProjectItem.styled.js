@@ -14,6 +14,7 @@ export const ProjectWrapper = styled.li`
   max-width: 540px;
   background-color: var(--color-content);
   border-radius: 16px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.4);
   @media screen and (min-width: 768px) {
     flex-direction: row;
     min-height: 300px;

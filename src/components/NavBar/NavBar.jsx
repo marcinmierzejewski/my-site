@@ -2,7 +2,10 @@ import { Logo } from "../Logo/Logo";
 import { ToolsMenu } from "../ToolsMenu/ToolsMenu";
 import { Link, LinkBox, MoreBtn } from "./NavBar.styled";
 import { AiOutlineMenu } from "react-icons/ai";
-import { HiOutlinePresentationChartBar } from "react-icons/hi";
+import {
+  HiOutlinePresentationChartBar,
+  HiOutlineInformationCircle,
+} from "react-icons/hi";
 
 export const NavBar = ({ setIsOpen }) => {
   return (
@@ -15,7 +18,10 @@ export const NavBar = ({ setIsOpen }) => {
           Projects
           <HiOutlinePresentationChartBar />
         </Link>
-        <Link to="/about">About</Link>
+        <Link to="/about">
+          About
+          <HiOutlineInformationCircle />
+        </Link>
       </LinkBox>
       <ToolsMenu />
       <MoreBtn onClick={() => setIsOpen(true)} type="button">

@@ -42,6 +42,7 @@ export const ButtonProjects = styled.button`
   padding: 5px 15px;
   border: none;
   border-radius: 5px;
+  margin-top: 30px;
   background: var(--color-accent);
   cursor: pointer;
   position: relative;

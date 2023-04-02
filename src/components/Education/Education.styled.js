@@ -42,8 +42,9 @@ export const EducationWrapper = styled.div`
           width: 1em;
           height: 1em;
           top: 0.18em;
-          left: calc(-60px + (-0.5em));
+          left: calc(-61px + (-0.5em));
           background-color: var(--color-hover);
+          border-radius: 2px;
         }
       }
       > p {
