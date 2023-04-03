@@ -1,10 +1,21 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+export const NavigationWrapper = styled.nav`
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  transition: all 250ms linear;
+  transform: ${(props) =>
+    props.isNavbarVisible ? "translateY(0)" : "translateY(-90px)"};
+`;
+
 export const LinkBox = styled.div`
   display: flex;
   align-items: center;
-`
+`;
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
@@ -41,11 +52,11 @@ export const MoreBtn = styled.button`
   transition: all 250ms linear;
 
   &:hover {
-    color: var(--color-accent)
+    color: var(--color-accent);
   }
 
   @media screen and (min-width: 1024px) {
     display: none;
     visibility: hidden;
-  }  
-`
+  }
+`;
