@@ -1,22 +1,17 @@
 import { useState, useRef } from "react";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import emailjs, { init } from "@emailjs/browser";
-import {
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaLinkedin,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import {
   ConnectWrapper,
   ConnectText,
-  SocialMedia,
   ConnectForm,
   InputBox,
   ConnectButton,
   NotificationBox,
 } from "./Connect.styled";
+import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 export const Connect = () => {
   const [name, setName] = useState("");
@@ -47,9 +42,9 @@ export const Connect = () => {
 
   const notify = () => {
     toast.success("Message Sent Successfully !", {
-      position: toast.POSITION.TOP_CENTER
+      position: toast.POSITION.TOP_CENTER,
     });
-  }
+  };
 
   const valueSubmit = (e) => {
     e.preventDefault();
@@ -81,29 +76,7 @@ export const Connect = () => {
           <p>Let's</p>
           <p>Connect</p>
         </ConnectText>
-        <SocialMedia>
-          <li>
-            <a
-              href="https://www.facebook.com/marcin.mierzejewski.16/"
-              target="_blank"
-            >
-              <FaFacebookSquare />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/marcinmierzejewski" target="_blank">
-              <FaGithubSquare />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/marcin-mierzejewski-a85257221/"
-              target="_blank"
-            >
-              <FaLinkedin />
-            </a>
-          </li>
-        </SocialMedia>
+        <SocialMedia />
       </div>
       <div>
         <ConnectForm onSubmit={valueSubmit} ref={form}>
@@ -148,7 +121,6 @@ export const Connect = () => {
             Send <FaArrowRight />
           </ConnectButton>
           <NotificationBox />
-          
         </ConnectForm>
       </div>
     </ConnectWrapper>

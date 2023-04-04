@@ -32,31 +32,6 @@ export const ConnectText = styled.div`
     font-size: 100px;
   }
 `;
-export const SocialMedia = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 260px;
-  color: var(--color-light);
-
-  > li {
-    > a > svg {
-      width: 24px;
-      height: 24px;
-      transition: all 250ms linear;
-      cursor: pointer;
-      color: var(--color-light);
-      @media screen and (min-width: 480px) {
-        width: 40px;
-        height: 40px;
-      }
-
-      &:hover {
-        color: var(--color-hover);
-      }
-    }
-  }
-`;
 
 export const ConnectForm = styled.form`
   display: flex;

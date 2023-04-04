@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { ModalOverlay, Modal, CloseBtn } from "./AsideMenu.styled";
 import { DarkMode } from "../DarkMode/DarkMode";
 import { ContactButton } from "../ContactButton/ContactButton";
@@ -6,12 +6,10 @@ import { useItIsDark } from "../../hooks/useItIsDark";
 import { useFormIsOpen } from "../../hooks/useFormIsOpen";
 import { ContactForm } from "../ContactForm/ContactForm";
 import { CgCloseR } from "react-icons/cg";
+import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 export const AsideMenu = ({ isOpen, setIsOpen }) => {
-  // const initialDark = localStorage.getItem("dark") || false
-  // const [isDark, setIsDark] = useState(initialDark)
   const { isDark, setIsDark } = useItIsDark();
-  // const [formIsOpen, setFormIsOpen] = useState(false);
   const { formIsOpen, setFormIsOpen } = useFormIsOpen();
 
   useEffect(() => {
@@ -47,6 +45,7 @@ export const AsideMenu = ({ isOpen, setIsOpen }) => {
         </CloseBtn>
         <ContactButton text="Contact Me!" setFormIsOpen={setFormIsOpen} />
         <DarkMode isDark={isDark} setIsDark={setIsDark} />
+        <SocialMedia />
         <ContactForm formIsOpen={formIsOpen} setFormIsOpen={setFormIsOpen} />
       </Modal>
     </>
