@@ -5,7 +5,7 @@ export const NavigationWrapper = styled.nav`
   position: fixed;
   top: 0;
   left: auto;
-  z-index: 100;
+  z-index: 4;
   backdrop-filter: blur(10px);
   transition: all 250ms linear;
   transform: ${(props) =>

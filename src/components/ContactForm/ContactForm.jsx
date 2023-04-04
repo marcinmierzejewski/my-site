@@ -5,6 +5,7 @@ import {
   FormBoxText,
   SubmitButton,
   CloseBtn,
+  NotificationBox,
 } from "./ContactForm.styled";
 import emailjs, { init } from "@emailjs/browser";
 import {
@@ -14,6 +15,8 @@ import {
   IoIosFiling,
   IoIosCloseCircleOutline,
 } from "react-icons/io";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
   const [name, setName] = useState("");
@@ -50,7 +53,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
   //press Escape to close Contact form modal
   useEffect(() => {
     const close = (e) => {
-      console.log(e.key);
+      // console.log(e.key);
       if (e.key === "Escape") {
         setFormIsOpen(false);
       }
@@ -60,6 +63,12 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
       return () => window.removeEventListener("keydown", close);
     }
   }, [formIsOpen]);
+
+  const notify = () => {
+    toast.success("Message Sent Successfully !", {
+      position: toast.POSITION.TOP_CENTER
+    });
+  }
 
   const valueSubmit = (e) => {
     e.preventDefault();
@@ -72,15 +81,14 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
       emailjs
         .sendForm(`${SERVICE}`, `${TEMPLATE}`, form.current, `${USER}`)
         .then(
-          (result) => {
-            alert("Message Sent Successfully");
-            console.log(result.text);
+          () => {
+            notify();
           },
           (error) => {
             console.log(error.text);
           }
         );
-      console.log(name, number, email);
+      // console.log(name, number, email);
       resetForm();
       setFormIsOpen(false);
     }
@@ -133,6 +141,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               name="email"
               value={email}
               onChange={inputChange}
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
             />
             <span>
@@ -146,6 +155,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
               name="message"
               value={message}
               onChange={inputChange}
+              title="Please, input your message"
               required
             />
             <span>
@@ -156,6 +166,7 @@ export const ContactForm = ({ formIsOpen, setFormIsOpen }) => {
           <SubmitButton type="submit" isAvailable={name && email && message}>
             Send message
           </SubmitButton>
+          <NotificationBox />
         </form>
       </FormWrapper>
     </>

@@ -1,4 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs, { init } from "@emailjs/browser";
 import {
   FaFacebookSquare,
@@ -13,6 +15,7 @@ import {
   ConnectForm,
   InputBox,
   ConnectButton,
+  NotificationBox,
 } from "./Connect.styled";
 
 export const Connect = () => {
@@ -42,6 +45,12 @@ export const Connect = () => {
     setMessage("");
   };
 
+  const notify = () => {
+    toast.success("Message Sent Successfully !", {
+      position: toast.POSITION.TOP_CENTER
+    });
+  }
+
   const valueSubmit = (e) => {
     e.preventDefault();
     const SERVICE = import.meta.env.VITE_SERVICE_KEY;
@@ -53,17 +62,15 @@ export const Connect = () => {
       emailjs
         .sendForm(`${SERVICE}`, `${TEMPLATE}`, form.current, `${USER}`)
         .then(
-          (result) => {
-            alert("Message Sent Successfully");
-            console.log(result.text);
+          () => {
+            notify();
           },
           (error) => {
             console.log(error.text);
           }
         );
-      console.log(name, email);
+      // console.log(name, email);
       resetForm();
-      setFormIsOpen(false);
     }
   };
 
@@ -119,8 +126,7 @@ export const Connect = () => {
               name="email"
               value={email}
               onChange={inputChange}
-              // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-              title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
             />
             <label htmlFor="form_email">Your email address:</label>
@@ -133,8 +139,7 @@ export const Connect = () => {
               name="message"
               value={message}
               onChange={inputChange}
-              pattern="^[a-zA-ZĐ°-ŃŹĐ-ĐŻ]+(([' -][a-zA-ZĐ°-ŃŹĐ-ĐŻ ])?[a-zA-ZĐ°-ŃŹĐ-ĐŻ]*)*$"
-              title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+              title="Please, input your message"
               required
             />
             <label htmlFor="form_message">Your message:</label>
@@ -142,6 +147,8 @@ export const Connect = () => {
           <ConnectButton type="submit" isAvailable={name && email && message}>
             Send <FaArrowRight />
           </ConnectButton>
+          <NotificationBox />
+          
         </ConnectForm>
       </div>
     </ConnectWrapper>

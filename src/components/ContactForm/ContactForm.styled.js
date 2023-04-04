@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ToastContainer } from "react-toastify";
 
 export const FormOverlay = styled.div`
   visibility: ${(props) => (props.formIsOpen ? "visible" : "hidden")};
@@ -182,5 +183,18 @@ export const CloseBtn = styled.button`
   > svg {
     height: 30px;
     width: 30px;
+  }
+`;
+
+export const NotificationBox = styled(ToastContainer)`
+  &&&.Toastify__toast-container {
+    max-width: 100%;
+  }
+  .Toastify__toast {
+  }
+  .Toastify__toast-body {
+  }
+  .Toastify__progress-bar {
+    background: var(--color-hover);
   }
 `;

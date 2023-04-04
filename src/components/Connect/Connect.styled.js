@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ToastContainer } from "react-toastify";
 
 export const ConnectWrapper = styled.div`
   display: flex;
@@ -156,5 +157,18 @@ export const InputBox = styled.div`
     @media screen and (min-width: 480px) {
       font-size: ${(props) => (props.isActive ? "30px" : "26px")};
     }
+  }
+`;
+
+export const NotificationBox = styled(ToastContainer)`
+  &&&.Toastify__toast-container {
+    max-width: 100%;
+  }
+  .Toastify__toast {
+  }
+  .Toastify__toast-body {
+  }
+  .Toastify__progress-bar {
+    background: var(--color-hover);
   }
 `;
