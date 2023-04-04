@@ -8,6 +8,7 @@ import { AsideMenu } from "../AsideMenu/AsideMenu";
 import { BoxSection } from "../Section/Section";
 import { Connect } from "../Connect/Connect";
 import { Footer } from "../Footer/Footer";
+import { GoToTop } from "../GoToTop/GoToTop";
 
 export const SharedLayout = () => {
   // const [isOpen, setIsOpen] = useState(false)
@@ -26,6 +27,7 @@ export const SharedLayout = () => {
         <Connect />
       </BoxSection>
       <Footer />
+      <GoToTop />
     </>
   );
 };
