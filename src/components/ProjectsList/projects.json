@@ -1,5 +1,14 @@
 [
   {
+    "image": "./images/bookread.png",
+    "title": "Bookread",
+    "about": "I am actually working on this application. You can register you account and then add a new book to read in future. Possibilities to planning a books, which are you going to read in countdown time.",
+    "usedSkills": "React, React-Router, Redux, Styled-Components, SCSS, JavaScript",
+    "repoLink": "https://github.com/marcinmierzejewski/bookread",
+    "pageLink": "https://bookread-mm.netlify.app",
+    "id": 1000
+  },
+  {
     "image": "./images/phonebook.png",
     "title": "Phonebook",
     "about": "An application that uses authorization of the user who, after logging in, has access to his contacts. Ability to add new contacts, as well as delete unnecessary ones. Using react-router-dom for navigation and createAsyncThunk for authorization",
