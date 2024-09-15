@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroImg from "./hero.jpg";
+import heroImg from "./hero1.png";
 
 export const HeroWrapper = styled.div`
   display: flex;
@@ -80,7 +80,6 @@ export const HeroLeft = styled.div`
 `;
 
 export const HeroRight = styled.div`
-  background-color: red;
   display: none;
   /* height: 300px; */
   background-size: cover;
